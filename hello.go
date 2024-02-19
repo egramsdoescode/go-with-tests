@@ -3,13 +3,14 @@ package main
 import "fmt"
 
 const (
-     engPrefix string = "Hello "
-     spanPrefix string = "Hola "
-     frenPrefix string = "Bonjour "
-     dudePrefix string = "Wassssup "    
-     spanish string = "Spanish"
-     french string = "French"
-     dude string = "Dude"
+     engPrefix = "Hello "
+     spanPrefix = "Hola "
+     frenPrefix = "Bonjour "
+     dudePrefix = "Wassssup "
+
+     spanish = "Spanish"
+     french = "French"
+     dude = "Dude"
 )
 
 func Hello(name string, language string) string {
