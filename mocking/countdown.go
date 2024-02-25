@@ -24,7 +24,24 @@ type SpySleeper struct {
 	Calls int
 }
 
+type ConfigurableSleeper struct {
+	duration time.Duration
+	sleep    func(time.Duration)
+}
+
+type SpyTime struct {
+	durationSlept time.Duration
+}
+
 type DefaultSleeper struct{}
+
+func (c *ConfigurableSleeper) Sleep() {
+	c.sleep(c.duration)
+}
+
+func (s *SpyTime) Sleep(duration time.Duration) {
+	s.durationSlept = duration
+}
 
 func (s *SpyCountdownOperations) Write(p []byte) (n int, err error) {
 	s.Calls = append(s.Calls, sleep)
