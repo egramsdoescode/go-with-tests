@@ -1,8 +1,8 @@
 package main
 
 import (
-    "fmt"
-    "errors"
+	"errors"
+	"fmt"
 )
 
 var ErrInsufficientFunds = errors.New("cannot withdraw, insufficient funds")
