@@ -113,6 +113,7 @@ func TestWalk(t *testing.T) {
 			t.Errorf("got %v, want %v", got, want)
 		}
 	})
+
 	t.Run("with function", func(t *testing.T) {
 		aFunction := func() (Profile, Profile) {
 			return Profile{33, "Berlin"}, Profile{34, "Katowice"}
