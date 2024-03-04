@@ -1,6 +1,8 @@
 package main
 
-import "reflect"
+import (
+    "reflect"
+)
 
 func walk(x interface{}, fn func(input string)) {
 	val := getValue(x)
