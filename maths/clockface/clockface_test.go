@@ -1,8 +1,10 @@
-package clockface
+package clockface_test
 
 import (
 	"testing"
 	"time"
+
+    "github.com/egramsdoescode/go-with-tests/maths/clockface"
 ) 
 
 func TestSecondHandAtMidnight(t *testing.T) {
